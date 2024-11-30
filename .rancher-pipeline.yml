@@ -17,6 +17,7 @@ stages:
       tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
     env:
       PLUGIN_INSECURE: "true"
+      PLUGIN_MIRROR: "192.168.56.108"
 - name: Deploy
   steps:
   - applyYamlConfig:
