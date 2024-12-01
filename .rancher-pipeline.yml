@@ -19,6 +19,7 @@ stages:
       PLUGIN_INSECURE: "true"
       PLUGIN_MIRROR: "192.168.56.108"
       DOCKER_INSECURE_REGISTRY: "192.168.56.108"
+      PLUGIN_DEBUG: "true"
 - name: Deploy
   steps:
   - applyYamlConfig:
