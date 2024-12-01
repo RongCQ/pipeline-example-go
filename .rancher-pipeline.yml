@@ -19,6 +19,8 @@ stages:
       registry: 192.168.56.108
     env:
       PLUGIN_INSECURE: "true"
+      PLUGIN_USERNAME: "admin"
+      PLUGIN_PASSWORD: "Harbor12345"
 - name: Deploy
   steps:
   - applyYamlConfig:
